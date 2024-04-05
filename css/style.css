@@ -1,0 +1,13 @@
+body {
+    background: linear-gradient(#000000 1%, #e24444);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+
+.nav-link{
+    font-size: 40px;
+    color: white;
+}
+
+.nav-link
