@@ -10,4 +10,7 @@ body {
     color: white;
 }
 
-.nav-link
+.nav-link:hover{
+    color: rgb(139, 139, 139);
+}
+
