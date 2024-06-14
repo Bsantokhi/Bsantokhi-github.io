@@ -1,59 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
 </head>
 
 <body>
 
-    <div class="container-fluid navbar">
-        <div class="col-md-5">
-            <nav class="navbar navbar-expand-md">
-                <div class="container">
-                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html" aria-current="page">Home
-                                    <span class="visually-hidden">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="projects.html">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="portfolio.html">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 head rounded-bottom">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" href="projecten.html">Projecten</a>
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                    <i class="icon bi-sun" onclick="myFunction()"></i>
+                </div>
+                </nav>
+            </div>
+        </div>
+
+    <div class="container-md">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 homeName">Projecten</div>
+            <div class="col-md-1"></div>
+
+        </div>
+    </div>
+
+    <h1 class="name">Brandon Santokhi</h1>
+
+
+
+    <!-- Project 1 -->
+
+    <div class="container-md sector1 hidden">
+        <div class="row ">
+            <div class="col-md-8 mainColor">TicTacToe <p class="smallerMainColor">Dit is een project waar er twee
+                    spelers zijn, Een kruisje en een circle. Jullie zitten in een 3 bij 3 vak. Het doel is is dat een
+                    van de twee spelers 3 van hun character op een rij hebben. het is verticaal, Horizontaal en
+                    diagonaal mogelijk. <br><br><br><br><br><br> Dit is een van mijn eerste projecten die ik heb
+                    gemaakt. Moeite om dit te maken had ik wel en dit was voordat we les kregen over bootstrap.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="card cards h-100">
+                    <img class="card-img-top img-fluid" src="/img/tictactoe.png" alt="Title">
+                    <div class="card-body  ">
+                        <h4 class="card-title"></h4>
+                        <a class="btn btn-success w-100" href="/projecten/tictactoe/index.html">Go To</a>
                     </div>
                 </div>
-            </nav>
+            </div>
         </div>
     </div>
 
-    <div class="container-md text-center page-name">
+
+    <div class="container-md sector2 hidden">
         <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">Projects</div>
-            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="card cards h-100">
+                    <img class="card-img-top img-fluid" src="/img/Higher-or-lower.png" alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title"></h4>
+                        <a class="btn btn-success w-100" href="/projecten/Higher or Lower/index.html">Go To</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 mainColor">Higher Or Lower
+                <p class="smallerMainColor">
+                    Dit is een project waar een computer een cijfer geeft van 1 tot 100 en dan kan u kiezen of uw cijfer
+                    hoger of lager gaat zijn dan van de computer. heeft u gelijk dan heeft u gewonnen en wint u credits,
+                    Heeft u verloren dan verlies u credits <br><br><br><br>hier had ik nog wat weinig kennis over HMTL
+                    en CSS, dit was ook voor wij les kregen van Bootstrap
+                </p>
+            </div>
         </div>
     </div>
 
+    <div class="container-md sector3 hidden">
+        <div class="row ">
+            <div class="col-md-8 mainColor">Escape Room <p class="smallerMainColor">Dit is een project waar je in een
+                    kamer wordt gezet en je moet aanwijzingen vinden en klusjes doen om naar de volgende kamer te gaan.
+                    In elke nieuwe kamer wordt het steeds moeilijker. Het gaat zo door todat je vrij bent en dan heb je
+                    het project uitgespeeld. <br><br><br><br><br>Dit was het eerste project dat we moesten doen in
+                    groepen. iedereen kreeg zijn taak. sinds toen begonnen we vaak projecten te doen in groepen van drie
+                    of vier</p>
+            </div>
+            <div class="col-md-4">
+                <div class="card cards h-100">
+                    <img class="card-img-top img-fluid" src="/img/escape-room.png" alt="Title">
+                    <div class="card-body  ">
+                        <h4 class="card-title"></h4>
+                        <a class="btn btn-success w-100" href="/projecten/Escape Room/kamer_1/index.html">Go To</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-md sector4 hidden">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card cards h-100">
+                    <img class="card-img-top img-fluid" src="img/Webcatalogus.png" alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title"></h4>
+                        <a class="btn btn-success w-100" href="/projecten/Webcatalogus/Contact.html">Go To</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 mainColor">Webcatalogus
+                <p class="smallerMainColor">
+                    Dit is een project waar er een catalogus gemaakt moest worden voor verschillende
+                    categorieën/subcategorieën, bijvoorbeeld van concerten of instrumenten etc.
+                    <br><br><br><br><br><br><br>Dit was het begin van meerdere pagina's te linken. Dit project was ook
+                    in groepen en had wat complicaties ertussen. Project hebben we niet kunnen afmaken vanwege weinig
+                    teamwerking.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-md sector5 hidden">
+        <div class="row ">
+            <div class="col-md-8 mainColor">Checkers <p class="smallerMainColor">Dit Project is een Damspel. Je kan hier
+                    alleen maar 1 vak bewegen op dezelfde kleur en alleen vooruit. Elkaar happen is mogelijk. En als de
+                    tegenstander geen spelStenen heeft dan heb je gewonnen. Als een van jou Spelsteen aan het einde van
+                    de bord aankomt, Dan wordt hij een zogenaamd "koning" en kan hij terug bewegen en ook terug happen.
+                    <br><br><br><br><br><br>Met dit project was je wel alleen. Dit project was wel wat moeilijker te
+                    doen en het was meer gevorderd JavaScript.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <div class="card cards h-100">
+                    <img class="card-img-top img-fluid" src="/img/Checkers.png" alt="Title">
+                    <div class="card-body  ">
+                        <h4 class="card-title"></h4>
+                        <a class="btn btn-success w-100" href="/projecten/Checkers/index.html">Go To</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-md sector6 hidden">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card cards h-100">
+                    <img class="card-img-top img-fluid" src="/img/Dashboard.png" alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title"></h4>
+                        <a class="btn btn-success w-100" href="/projecten/Dashboard/Dashboard.html">Go To</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 mainColor">Dashboard
+                <p class="smallerMainColor">
+                    In dit project was het doel om meerdere Dashboards te maken verschillende onderwerpen (bijvoorbeeld:
+                    "Stocks, Valuta, Crypto, Weerstation, etc.") Dit was gedaan in groepen.
+                    <br><br><br><br><br><br><br>Dit project was best wel makkelijk te doen vanwege bootstrap. Hier
+                    werkten we met API Data en Fetch.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="/js/main.js"></script>
 </body>
 
 </html>
