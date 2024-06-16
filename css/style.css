@@ -30,3 +30,16 @@ body {
     font-size: 30px;
 }
 
+.white{
+    color: white;
+    text-decoration: none;
+}
+
+.bag-container{
+    margin-top: 200px;
+}
+
+.project-text{
+    margin-top: 150px;
+    font-size: 20px;
+}
