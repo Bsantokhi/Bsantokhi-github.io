@@ -17,8 +17,11 @@ body {
 .home-title{
     color: white;
     font-size: 20px;
-    text-align: center;
     animation: fadeIn 3s; 
+}
+
+.bag-card{
+    margin-top: 120px;
 }
 
 .about-text{
@@ -51,7 +54,6 @@ body {
 
 .project-bio{
     font-size: 20px;
-
 }
 
 
