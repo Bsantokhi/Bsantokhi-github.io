@@ -16,9 +16,9 @@ body {
 
 .home-title{
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
-    
+    animation: fadeIn 3s; 
 }
 
 .about-text{
