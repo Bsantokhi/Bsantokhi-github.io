@@ -18,16 +18,21 @@ body {
     color: white;
     font-size: 30px;
     text-align: center;
+    
 }
 
 .about-text{
     color: white;
-    font-size: 30;
+    font-size: 25px;
+    animation: fadeIn 6s; 
+
 }
 
 .page-name{
     color: white;
     font-size: 30px;
+    animation: fadeIn 3s; 
+
 }
 
 .white{
@@ -43,3 +48,33 @@ body {
     margin-top: 150px;
     font-size: 20px;
 }
+
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        opacity: 0;
+        transition: none;
+    }
+    
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
